@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <title>Web Visualizations</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Web Visualizations</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/pages/temp.html"
+                >Lat vs. Max Temp</a
+              >
+              <a class="dropdown-item" href="/pages/humidity.html"
+                >Lat vs. Humidity</a
+              >
+              <a class="dropdown-item" href="/pages/cloudiness.html"
+                >Lat vs. Cloudiness</a
+              >
+              <a class="dropdown-item" href="/pages/wind.html"
+                >Lat vs. Wind Speed</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Base Container -->
+    <section>
+      <div class="container">
+        <h2 id="page-title">Latitude vs. X</h2>
+        <p class="lead" style="text-align:center">
+          A study on how latitude affects temperature, humidity, cloudiness, and
+          wind speed.
+        </p>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="paper">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Purus viverra accumsan in nisl nisi. Imperdiet sed euismod nisi
+                porta lorem mollis aliquam ut porttitor. Platea dictumst
+                vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+                cras. Scelerisque eleifend donec pretium vulputate sapien nec.
+                Lectus quam id leo in vitae turpis massa sed. Vivamus at augue
+                eget arcu dictum varius duis. Purus semper eget duis at. Tempus
+                iaculis urna id volutpat lacus laoreet non curabitur. Libero
+                enim sed faucibus turpis in eu mi bibendum. Nunc non blandit
+                massa enim nec dui. Arcu cursus vitae congue mauris rhoncus
+                aenean vel elit. Nisl rhoncus mattis rhoncus urna neque viverra
+                justo.
+              </p>
+              <p>
+                To the right you will see the four different comparisons I
+                analyzed. Click on any one of them in order to view a more
+                detailed examination of the data as well as visualizations.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="paper">
+              <a href="/pages/temp.html">
+                <div class="box">
+                  <div class="box-content">
+                    <p>Lat vs Max Temperature</p>
+                  </div>
+                  <img
+                    class="box-image"
+                    src="/assets/img/Fig1.png"
+                    alt="lat vs temp"
+                  />
+                </div>
+              </a>
+              <a href="/pages/humidity.html">
+                <div class="box">
+                  <div class="box-content">
+                    <p>Lat vs Humidity</p>
+                  </div>
+                  <img
+                    class="box-image"
+                    src="/assets/img/Fig2.png"
+                    alt="lat vs humidity"
+                  />
+                </div>
+              </a>
+              <a href="/pages/cloudiness.html">
+                <div class="box">
+                  <div class="box-content">
+                    <p>Lat vs Cloudiness</p>
+                  </div>
+                  <img
+                    class="box-image"
+                    src="/assets/img/Fig3.png"
+                    alt="lat vs cloudiness"
+                  />
+                </div>
+              </a>
+              <a href="/pages/wind.html">
+                <div class="box">
+                  <div class="box-content">
+                    <p>Lat vs Wind Speed</p>
+                  </div>
+                  <img
+                    class="box-image"
+                    src="/assets/img/Fig4.png"
+                    alt="lat vs wind"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
