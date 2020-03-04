@@ -71,6 +71,7 @@ h2#page-title {
 .info-container {
   text-align: justify;
   text-justify: inter-word;
+  min-height: 90%;
 }
 .info-container img {
   width: 50%;
